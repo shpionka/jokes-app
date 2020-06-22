@@ -1,4 +1,5 @@
 import React from 'react';
+import {connect} from "react-redux";
 
 const JokeCard = ({joke}) => {
     return (
@@ -9,4 +10,10 @@ const JokeCard = ({joke}) => {
     )
 }
 
-export default JokeCard;
+const mapStateToProps = (state) => {
+    return {
+        joke: state.joke
+    }
+}
+
+export default connect(mapStateToProps)(JokeCard);

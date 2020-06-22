@@ -7,7 +7,7 @@ import logger from 'redux-logger';
 
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import jokeReducer from './redux/reducers/joke-reducer';
+import jokeReducer from './redux/joke-reducer';
 
 const store = createStore(jokeReducer, applyMiddleware(thunk, logger));
 
