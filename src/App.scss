@@ -1,0 +1,15 @@
+.joke-app {
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.joke-app-content {
+  flex: none;
+  width: 70%;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}

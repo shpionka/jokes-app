@@ -10,6 +10,8 @@ export function jokeFormReducer(state, action) {
         case 'any':
             return {
                 ...initialState,
+                isCustom: false,
+                programming: false,
                 any: true
             }
         case 'programming':

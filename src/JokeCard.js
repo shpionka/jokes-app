@@ -1,11 +1,14 @@
 import React from 'react';
 import {connect} from "react-redux";
+import "./JokeCard.scss";
+import { Typography } from 'antd';
+
+const { Title } = Typography;
 
 const JokeCard = ({joke}) => {
     return (
-        <div>
-            <h2>Here we go:</h2>
-            <h2>{joke}</h2>
+        <div className="joke-card">
+            <Title level={3}>{joke}</Title>
         </div>
     )
 }
